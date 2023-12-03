@@ -24,17 +24,18 @@ python --version
 ```bash
 git clone https://github.com/notleowang/advent-of-code-2023.git
 ```
-2. Set current directory to the solution you want for the given day. For example, if I want to see the solution to day 5:
-```bash
-cd day_5
+2. Set current directory to the solution you want for the given day.
+```
+cd day_<day-number>
 ```
 3. Run `main.py`.
 ```bash
 python main.py
 ```
-4. (Optional) Run `main.py` with parameters. This will give you the solution to part 2 of the solution.
+4. (Optional) Run `main.py` with parameters. This will give you the solution to a part only.
 ```bash
-python main.py 2
+python main.py 1    // prints solution to part 1
+python main.py 2    // prints solution to part 2
 ```
 
 ## Acknowledgements
