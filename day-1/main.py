@@ -2,7 +2,7 @@ import sys
 import part_1, part_2
 
 def read_file():
-    file = open("input", "r")
+    file = open("input.txt", "r")
     return file.read().splitlines()
 
 def main():
