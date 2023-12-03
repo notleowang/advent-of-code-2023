@@ -6,11 +6,16 @@ def read_file():
     return file.read().splitlines()
 
 def main():
-    args = sys.argv[1]
+    args = sys.argv[1:]
     lines = read_file()
 
+    if len(args) > 1:
+        print("Too many arguments given")
+        return
+
     if len(args) == 0:
-        print("No arguments given")
+        part_1.solve(lines)
+        part_2.solve(lines)
         return
 
     match args[0]:
@@ -18,9 +23,8 @@ def main():
             part_1.solve(lines)
         case "2":
             part_2.solve(lines)
-        case "a":
-            part_1.solve(lines)
-            part_2.solve(lines)
+        case default:
+            print("Invalid argument given")
 
 if __name__ == "__main__":
     main()
