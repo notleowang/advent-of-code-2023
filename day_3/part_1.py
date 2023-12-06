@@ -36,6 +36,7 @@ symbols = {}
 # - For an 'n' digit part_number: [[(col_idx, row_idx), (col_idx, row_idx), ...], [(...), ...], ...]
 part_numbers = {}
 
+
 # helper for combining digits
 def combine_digits(digits):
     return "".join(digits)
