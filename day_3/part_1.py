@@ -187,7 +187,6 @@ def solve(lines):
             # print(neighbours)
             if is_adjacent(neighbours):
                 sum += int(part_number)
-                # print(sum)
 
         # print("------")
 
